@@ -12,10 +12,10 @@ Optional configuration:
  - set USE_BUSYBOX=true inside the script to download, compile, and boot with busybox
 
 Requirements:
- - QEMU
- - glibc-static
+ - QEMU (qemu-kvm)
  - internet connection
  - user has superuser privileges
+ - kernel build tools (flex, bison, build-essential, libssl-dev, libelf-dev)
 
 Assumptions:
  - kernel version 6.3.12 is acceptable
@@ -24,5 +24,6 @@ Assumptions:
  - a running shell (i.e. busybox) is equivalent to "a fully bootable filesystem"
  - the user is able to install script requirements
 
-TODO:
- - test on Ubuntu VM
+Tested on:
+ - Fedora 38
+ - Ubuntu 22.04.2 (live server)
